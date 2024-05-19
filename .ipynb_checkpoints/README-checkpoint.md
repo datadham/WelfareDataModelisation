@@ -1,5 +1,8 @@
 # WelfareDataModelisation
 
+![Example Image](img/img1.png)
+
+
 My study centered on an extensive database comprising no less than 71,000 individuals, allowing for comprehensive multi-dimensional analysis.
 
 The central aim of this thesis was to gain an in-depth understanding of the complex interactions between human metabolism and well-being, utilizing advanced modeling techniques and artificial intelligence. Through a detailed exploration of this massive dataset, I sought to identify trends, correlations, and key factors influencing individuals' well-being.
@@ -9,7 +12,7 @@ This project has been an exciting endeavor, merging biology, data science, and A
 I invite you to delve further into this project in my portfolio, where you will discover the details of my methodology, the fascinating results I achieved, and the potential implications of this research for our understanding of human metabolism and well-being. I hope this exploration inspires you as much as it has inspired me.
 
 
-## Description des données 
+## Data Description
 
 **DATA SOURCE** : https://www.kaggle.com/datasets/prosperchuks/health-dataset/discussion?resource=download&select=hypertension_data.csv
 
