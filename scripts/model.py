@@ -12,7 +12,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import joblib
 
 
-def create_cluster(diabetes, nb_cluster):
+def create_cluster(diabetes, nb_cluster=3):
     kmeans = KMeans(n_clusters=nb_cluster, random_state=42).fit(diabetes)
     diabetes['cluster_labels'] = kmeans.labels_
     return diabetes

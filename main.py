@@ -5,7 +5,7 @@ diabetes, stroke, hypertension = getdata('data')
 print(diabetes.columns)
 
 # Unsupervised learning to find metabolism profiles
-diabetes = createcluster(diabetes)
+diabetes = create_cluster(diabetes)
 
 # Supervised learning to have a production point attributor
 model = benchmark(diabetes)
