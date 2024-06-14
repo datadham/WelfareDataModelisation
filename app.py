@@ -76,7 +76,7 @@ with tabs[0]:
         # Add the annotation trace after the main plot data
         fig.add_trace(annotation_trace)
 
-    fig.update_layout(height=1200)
+    fig.update_layout(height=800)
     # Display the plot in Streamlit
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
