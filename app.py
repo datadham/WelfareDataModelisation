@@ -48,13 +48,15 @@ with tabs[0]:
     feature = st.selectbox('Explain Category', options=['cluster'] + [i for i in diabetes.columns])
 
     # Define custom color scales based on icon logo (example colors)
-    custom_colors = ['#1f78b4', '#33a02c', '#b2df8a', '#a6cee3']
+    #custom_colors = ['#1f78b4', '#33a02c', '#b2df8a', '#a6cee3']
 
-    # Create an interactive scatter plot with specific colormaps
-    fig = px.scatter(diabetes, x='umap_x', y='umap_y', color=feature,
-                    color_discrete_sequence=custom_colors, color_continuous_scale=custom_colors)
+    ## Create an interactive scatter plot with specific colormaps
+    #fig = px.scatter(diabetes, x='umap_x', y='umap_y', color=feature,
+     #               color_discrete_sequence=custom_colors, color_continuous_scale=custom_colors)
+     
+    fig = px.scatter(diabetes, x='umap_x', y='umap_y', color=feature, color_continuous_scale=px.colors.sequential.Viridis)
 
-    annot = False
+    annot = True
     marker_x = 0
     marker_y = 0
 
@@ -74,7 +76,7 @@ with tabs[0]:
         # Add the annotation trace after the main plot data
         fig.add_trace(annotation_trace)
 
-    fig.update_layout(height=600)
+    fig.update_layout(height=1200)
     # Display the plot in Streamlit
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
@@ -199,8 +201,7 @@ with tabs[1]:
                     marker_x = 11
                     marker_y = 11
                     annot= True
-                    st.write('dodo')
-
+                    
 with tabs[2]:
     st.header('Meta Detector Model : Devellop train and deploy')
     st.write('How to deploy')
